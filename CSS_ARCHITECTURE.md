@@ -51,6 +51,8 @@ src/
 - **Consistency**: Shared variables ensure consistent design
 - **Performance**: Only component-specific styles are loaded
 - **Developer Experience**: Clear separation of concerns
+- **Text Overflow Handling**: Robust text wrapping prevents layout breaks
+- **Responsive Design**: Flexible layouts that work across different screen sizes
 
 ## Usage
 
@@ -72,3 +74,11 @@ See `styles/variables.css` for the complete list of available design tokens incl
 - Typography (font families, sizes, weights)
 - Border radius values
 - Shadow definitions
+
+## Text Handling & Layout
+
+The architecture includes robust text overflow handling:
+- **Word wrapping**: `word-wrap: break-word`, `overflow-wrap: break-word`
+- **Long text**: Automatic line breaking for very long words/URLs
+- **Flexible layouts**: `min-width: 0` prevents flex items from growing beyond containers
+- **Container constraints**: `overflow: hidden` prevents layout breaks
