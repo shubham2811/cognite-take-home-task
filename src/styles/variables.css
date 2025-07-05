@@ -1,0 +1,39 @@
+/* CSS Custom Properties (Variables) */
+:root {
+  /* Colors */
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --primary-active: #004085;
+  --secondary-color: #6c757d;
+
+  --background-color: #f6f8fa;
+  --surface-color: #fff;
+  --border-color: #ccc;
+  --border-light: #eee;
+
+  --message-me-bg: #d1e7dd;
+  --message-friend-bg: #f8d7da;
+  --friend-active-bg: #e6f0ff;
+  --friend-hover-bg: #f0f0f0;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+
+  /* Typography */
+  --font-family: Arial, sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  /* Border radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+
+  /* Shadows */
+  --shadow-focus: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}

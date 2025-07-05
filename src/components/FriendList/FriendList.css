@@ -1,0 +1,28 @@
+/* Import CSS variables */
+@import "../../styles/variables.css";
+
+/* FriendList component styles */
+.friend-list {
+  width: 200px;
+  flex-shrink: 0; /* Prevents the sidebar from shrinking */
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+  overflow-y: auto;
+}
+
+.friend-item {
+  padding: var(--spacing-md) var(--spacing-lg);
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-light);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.friend-item:hover {
+  background-color: var(--friend-hover-bg);
+}
+
+.friend-item.active {
+  background-color: var(--friend-active-bg);
+  font-weight: var(--font-weight-bold);
+}

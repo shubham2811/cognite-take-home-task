@@ -1,0 +1,16 @@
+/* Import CSS variables */
+@import "./styles/variables.css";
+
+/* Global styles for the application */
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden; /* Prevents horizontal scrolling */
+  width: 100vw; /* Ensures full width */
+}

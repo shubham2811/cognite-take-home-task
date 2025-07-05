@@ -1,0 +1,72 @@
+/* Import shared styles and variables */
+@import "../../styles/variables.css";
+@import "../../styles/shared.css";
+
+/* ChatWindow component styles */
+.chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-xl);
+  background-color: var(--surface-color);
+  min-width: 0; /* Allows the container to shrink below its content size */
+  overflow: hidden; /* Prevents container from growing beyond viewport */
+}
+
+.chat-header {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+}
+
+.message-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin: var(--spacing-xs) 0;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  max-width: 60%;
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.message.me {
+  background-color: var(--message-me-bg);
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.friend {
+  background-color: var(--message-friend-bg);
+  align-self: flex-start;
+  text-align: left;
+}
+
+.input-area {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.input-area input {
+  flex: 1;
+  padding: var(--spacing-md);
+  font-size: var(--font-size-base);
+  min-width: 0; /* Prevents flex item from growing larger than container */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.input-area button {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-base);
+  flex-shrink: 0; /* Prevents button from shrinking */
+}
